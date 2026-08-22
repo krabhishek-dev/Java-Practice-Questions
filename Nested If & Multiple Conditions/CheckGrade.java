@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class CheckGrade {
 
   public static void main(String[] args) {
-    
     Scanner scanner = new Scanner(System.in);
 
     while (true) {
@@ -26,17 +25,21 @@ public class CheckGrade {
         System.out.println("Grade F");
       }
 
-      System.out.print("Do you want to continue (y/n): ");
-      char choice = scanner.next().charAt(0);
+      while (true) {
+        System.out.print("Do you want to continue (y/n): ");
+        char choice = scanner.next().charAt(0);
 
-      if(choice == 'n' || choice == 'N'){
-        break;
-      } else if(choice != 'y' || choice != 'Y'){
-        System.out.println("Invalid option!");
-      } 
+        if (choice == 'n' || choice == 'N') {
+          scanner.close();
+          System.out.println("Program Exit!");
+          return;
+        } else if (choice == 'y' || choice == 'Y') {
+          break;
+        } else {
+          System.out.println("Invalid option! Please enter y or n.");
+        }
+      }
     }
 
-    scanner.close();
-    System.out.println("Program Exit!");
   }
 }
