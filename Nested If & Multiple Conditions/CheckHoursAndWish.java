@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class CheckHoursAndWish {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter hour (0-23): ");
-        int hour = sc.nextInt();
+        int hour = scanner.nextInt();
 
         if (hour >= 0 && hour <= 23) {
             if (hour >= 5 && hour < 12) {
@@ -31,6 +31,6 @@ public class CheckHoursAndWish {
             System.out.println("Invalid hour");
         }
 
-        sc.close();
+        scanner.close();
     }
 }
