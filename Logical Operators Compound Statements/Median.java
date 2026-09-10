@@ -23,8 +23,8 @@ public class Median {
       median = num3;
     }
 
-    System.out.print("Result: " + medium);
+    System.out.print("Result: " + median);
 
-    sc.colse();
+    sc.close();
   }
 }
