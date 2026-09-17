@@ -6,11 +6,11 @@ public class GeometricProgression {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter three numbers: ");
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
+        double a = sc.nextDouble();
+        double b = sc.nextDouble();
+        double c = sc.nextDouble();
 
-        if(b*b == a * c) {
+        if(a != 0 && b != 0 && c != 0 && (b*b == a * c)) {
             System.out.println("They are in geometric progression.");
         } else {
             System.out.println("Not in geometric progression.");
