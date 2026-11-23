@@ -1,2 +1,1 @@
 ﻿# Java-Practice-Questions
-new series 
